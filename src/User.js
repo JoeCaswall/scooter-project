@@ -9,7 +9,7 @@ class User {
   }
   login(password) {
     if (password !== this.#password) {
-      throw new Error("Incorrect Password");
+      throw new Error("Username or Password is incorrect");
     }
     this.loggedIn = true;
   }
@@ -18,6 +18,9 @@ class User {
   }
   getPassword() {
     return this.#password;
+  }
+  getAge() {
+    return this.#age;
   }
 }
 
