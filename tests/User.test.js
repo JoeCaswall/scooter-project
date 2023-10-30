@@ -37,4 +37,8 @@ describe("User method tests", () => {
     user.logout();
     expect(user.loggedIn).toBe(false);
   });
+  //test getPassword
+  it("returns the private password property", () => {
+    expect(user.getPassword()).toBe("test123");
+  });
 });
